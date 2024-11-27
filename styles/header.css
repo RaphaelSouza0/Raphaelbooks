@@ -7,7 +7,7 @@
     display: inline-block;
 }
 .cabeçalho{
-    background-color: orange ; rgb (252, 208, 13);
+    background-color: rgb(252, 208, 13);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,26 +21,30 @@
     padding: 1em;
 }
 .lista-menu{
-    display: none;
+    display:none;
     position: absolute;
     top: 100%;
     width: 60vw;
 }
-.container__botao:checke~.lista-menu{
-    display: block;
+.container__botao:checked~.lista-menu{
+    display:block;
 }
 .lista-menu__titulo,
- .lista-menu__item{
+.lista-menu__item{
     padding: 1em;
-    background-color: black;
+    background-color: white;
 }
 .lista-menu__titulo{
-    color: indigo;
+    color: rgb(247, 10, 10);
+    font-weight:700;
 }
 .lista-menu__link{
-    background-color:rgb(240, 14, 14);
+    background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+.container__botao{
+    display: none;
 }
